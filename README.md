@@ -1,74 +1,83 @@
 
+![alt text](http://3.bp.blogspot.com/-ajoW2tRYtQg/U6tSKgAmSYI/AAAAAAAAAJA/uf7IQ3GArA4/s1600/logo_inurl4.png "SCANNER INURLBR")
 
+ *  PHP Version         5.4.7
+ *  php5-curl           LIB
+ *  cURL Information    7.24.0
+ *  Apache              2.4
+ *  allow_url_fopen =   On
+ *  Motor de busca      GOOGLE
+ *  Permição            Leitura & Escrita
 
-Coloque o nome do seu script como bot.php
+Seu script deve ter o nome: *bot.php*
+
+-Abrindo o scanner
 ---------------------------------------------------------------------------------------------
-
-Abrindo o scanner...
 Quando o arquivo é iniciado no navegador o mesmo
-imprime "SEM ACESSO!".
+imprime "*SEM ACESSO!*".
 
 Pois temos uma sec simples.
+```php
 
-    <CODE>
     if (isset($_GET['senha']) && $_GET['senha'] == 'googleinurl') {
         $_SESSION['valida'] = 1; //SETANDO O VALIDADOR DA PAGINA
     }
-    </CODE>
 
-
-Assim fica o acesso:
-
-URL: http://localhost/bot.php?senha=googleinurl
-
+```
+-Assim fica o acesso:
 ---------------------------------------------------------------------------------------------
-
+```
+URL: http://localhost/bot.php?senha=googleinurl
+```
+---------------------------------------------------------------------------------------------
 
 Agora vamos efetuar uma pesquisa simples.
 Configuração:
 
- -*DORK...: O QUE VAI SER BUSCADO||Operadores avançados do Google.
+ -**0xDORK...:** O QUE VAI SER BUSCADO||Operadores avançados do Google.
+ 
+ -**0xPROXY + PORTA..:** Caso seja bloquiado pelo Google use um proxy.
 
- - PROXY + PORTA..: Caso seja bloquiado pelo Google use um proxy.
+ -**0xHOST GOOGLE..:** Escolha entre 202 Domínios do google para efetuar sua busca.
 
- - HOST GOOGLE..: Escolha entre 202 Domínios do google para efetuar
- sua busca.
+ -**0xARQUIVO SAÍDA.:** ONDE VAI SER SALVO SEUS RESULTADOS DE BUSCA.
 
- - *ARQUIVO SAÍDA.:ONDE VAI SER SALVO SEUS RESULTADOS DE BUSCA.
+ -**0xEXPL01T.:** PARÂMETRO QUE DEVE SER INJETADO A CADA URL, NO FINAL
+DAS URL'S ENCONTRADAS.
+ *Assim pode ser injetado uma string que gere erros ou manipulem o servidor.*
 
- - 0xEXPL01T.: PARÂMETRO QUE DEVE SER INJETADO A CADA URL, NO FINAL
- DAS URL'S ENCONTRADAS.
- Assim pode ser injetado uma string que gere erros ou manipulem o servidor.
+ -**0xBUSCAR ERROS: [ PADRÃO ] /  (x)[ PERSONALIZADO ]**
+VOU EXPLICAR O PERSONALIZADO  PRIMEIRO.
 
- - *BUSCAR ERROS: [ PADRÃO ] /  (x)[ PERSONALIZADO ]
- VOU EXPLICAR O PERSONALIZADO  PRIMEIRO.
+>-[ **PADRÃO** ]= '*Vai buscar erros SQL & Programação*'
+   
+>-[ **PERSONALIZADO** ]= '*Vai buscar erros/string PERSONALIZADOS dentro de cada site, no qual foi defenido na opção* **0xACHAR ERRO.:**'
 
- - ACHAR ERRO.:É usado junto com a opção *BUSCAR ERROS: PERSONALIZADO.
- Pois foge do padrão de erros SQLI ou ERROS de programação ja configurados
- no script.
- Digamos que você deseja encontrar sites do governo que tenha a frase
- "Municipal".
- Usamos uma dork
- DORK=> site:.rj.gov.br  / Vai listar todos sites do governos Rio de Janeiro.
- ACHAR ERRO.:Municipal  / Vai procurar a palavra "Municipal" dentro das url's
- encontradas com a Dork acima.
- VAMOS LÁ.....
- AGORA VAMOS AGUARDAR....
- Depois de alguns minutos....
- O Scanner valida todo o html da url.
- agora vamos para busca de erros padrão do script.
+
+ -**0xACHAR ERRO.:** É usado junto com a opção BUSCAR ERROS: PERSONALIZADO.
+
+Pois foge do padrão de erros SQLI ou ERROS de programação já configurados no script.
+Digamos que você deseja encontrar sites do governo que tenha a frase "*Municipal*", essa opção
+possibilita isso.
+Logica:
+
+>**0xDORK=> site:.rj.gov.br**  / *Vai listar todos sites do governos Rio de Janeiro.*
+
+>**0xACHAR ERRO.:Municipal**  / *Vai procurar a palavra "Municipal" dentro das url's*
+
 ---------------------------------------------------------------------------------------------
 
- - *BUSCAR ERROS: (x)[ PADRÃO ] /  [ PERSONALIZADO ]
- PADRÃO  Busca erros no modo padrão é buscar erros SQLI + Erros de programação.
- Vamos ver quais são os erros padrões do script.
- Pode ou não ser junto com exploit isso vai depender de sua dork.
- Algumas dorks já forçam o buscador a listar sites com erros.
- Em outras situações usamos o exploit para gerar o erro desejado.
+BUSCAR ERROS:(x)[PADRÃO]/[PERSONALIZADO]
+---------------------------------------------------------------------------------------------
+>PADRÃO  Busca erros no modo padrão é buscar erros SQLI + Erros de programação.
+Vamos ver quais são os erros padrões do script.
+Pode ou não ser junto com exploit isso vai depender de sua dork.
+Algumas dorks já forçam o buscador a listar sites com erros.
+Em outras situações usamos o exploit para gerar o erro desejado.
  
-```php
 
-    <CODE>
+
+```php
     #ERROS MYSQL
     $erro['MYSQL-01'] = 'mysql_';
     $erro['MYSQL-02'] = 'You have an error in your SQL syntax;';
@@ -106,22 +115,5 @@ Configuração:
     $erro['INDEFINIDO-01'] = 'SQL';
     $erro['INDEFINIDO-02'] = 'Fatal error';
     $erro['INDEFINIDO-03'] = 'Warning';
-    </CODE>
 ```
 ---------------------------------------------------------------------------------------------
-AGORA VAMOS USAR O MODO SIMPLES COM EXPLOIT PADRÃO SQLI.
-
-Exemplo de uso
-
-DORK[0]=> inurl:cgi/cgilua.exe/sys/start.htm?sid=1
-
-Com essa dork ele vai buscar na url cgi/cgilua.exe/sys/start.htm?sid=1[SEU EXPLOIT]
-E injetar o exploit no final de cada resultado.
-Ficamdo da seguinte forma:
-
-http://www.site01.com.br/pasta/cgi/cgilua.exe/sys/start.htm?sid=1'0x272D2D3B
-http://www.site02.com.br/cgi/cgilua.exe/sys/start.htm?sid=5'0x272D2D3B
-http://site03.gov.br/pasta1/pasta2/cgi/cgilua.exe/sys/start.htm?sid=2'0x272D2D3B
-
-O script vai executar internamente as urls encontradas + Exploits.
-Achando algum erro padrão dentro do html da pagina é logo destacado como vull.
