@@ -115,17 +115,18 @@ Em outras situações usamos o exploit para gerar o erro desejado.
 ---------------------------------------------------------------------------------------------
 
 Cada url encontrada vai passar pelas validações predefinidas em sua configuração, Seja uma busca  [PADRÃO]
- ou [PERSONALIZADO], chegando em seu termino o scan salva as urls validadas no arquivo txt definido.
+ou [PERSONALIZADO], chegando em seu termino o scan salva as urls validadas no arquivo txt definido.
 
 
- Video Tutorial 01 
+- Video Tutorial 01 
 --------
-*BUSCAR EMAILS [ SCANNER INURLMAIL 1.0 ]*
-[![TUTORIAL / BUSCAR EMAILS  SCANNER INURLBR INTERFACE 1.0 ](http://img.youtube.com/vi/XIuO_U91kVU/0.jpg)](http://www.youtube.com/watch?v=XIuO_U91kVU)
+*[ SCANNER INURLMAIL 1.0 ]*
+
+[![TUTORIAL / SCANNER INURLBR 1.0 ](http://img.youtube.com/vi/DFY2VHD5cIc/0.jpg)](http://www.youtube.com/watch?v=DFY2VHD5cIc)
 
 
- Video Tutorial 02
+- Video Tutorial 02
 --------
-*BUSCAR EMAILS [ SCANNER INURLMAIL 1.0 ]*
-[![TUTORIAL / BUSCAR EMAILS  SCANNER INURLBR INTERFACE 1.0 ](http://img.youtube.com/vi/DFY2VHD5cIc/0.jpg)](http://www.youtube.com/watch?v=DFY2VHD5cIc)
+*[ SCANNER INURLBR 1.0 ]*
 
+[![Tutorial / SCANNER INURLBR 1.0 ](http://img.youtube.com/vi/XIuO_U91kVU/0.jpg)](http://www.youtube.com/watch?v=XIuO_U91kVU)
