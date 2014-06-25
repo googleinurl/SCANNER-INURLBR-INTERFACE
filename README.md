@@ -1,4 +1,3 @@
-
 ![alt text](http://3.bp.blogspot.com/-ajoW2tRYtQg/U6tSKgAmSYI/AAAAAAAAAJA/uf7IQ3GArA4/s1600/logo_inurl4.png "SCANNER INURLBR")
 
  *  PHP Version         5.4.7
@@ -8,13 +7,11 @@
  *  allow_url_fopen =   On
  *  Motor de busca      GOOGLE
  *  Permição            Leitura & Escrita
-
-Seu script deve ter o nome: *bot.php*
+ *  Nome script para envio de post: *bot.php*
 
 -Abrindo o scanner
 ---------------------------------------------------------------------------------------------
-Quando o arquivo é iniciado no navegador o mesmo
-imprime "*SEM ACESSO!*".
+Quando o arquivo é iniciado no navegador o mesmo imprime "*SEM ACESSO!*".
 
 Pois temos uma sec simples.
 ```php
@@ -31,12 +28,12 @@ URL: http://localhost/bot.php?senha=googleinurl
 ```
 ---------------------------------------------------------------------------------------------
 
-Agora vamos efetuar uma pesquisa simples.
 Configuração:
+---------------------------------------------------------------------------------------------
 
  -**0xDORK...:** O QUE VAI SER BUSCADO||Operadores avançados do Google.
  
- -**0xPROXY + PORTA..:** Caso seja bloquiado pelo Google use um proxy.
+ -**0xPROXY + 0xPORTA..:** Caso seja bloqueado pelo Google use um proxy.
 
  -**0xHOST GOOGLE..:** Escolha entre 202 Domínios do google para efetuar sua busca.
 
@@ -46,8 +43,7 @@ Configuração:
 DAS URL'S ENCONTRADAS.
  *Assim pode ser injetado uma string que gere erros ou manipulem o servidor.*
 
- -**0xBUSCAR ERROS: [ PADRÃO ] /  (x)[ PERSONALIZADO ]**
-VOU EXPLICAR O PERSONALIZADO  PRIMEIRO.
+ -**0xBUSCAR ERROS: [ PADRÃO ] OU  (x)[ PERSONALIZADO ]**
 
 >-[ **PADRÃO** ]= '*Vai buscar erros SQL & Programação*'
    
@@ -117,3 +113,19 @@ Em outras situações usamos o exploit para gerar o erro desejado.
     $erro['INDEFINIDO-03'] = 'Warning';
 ```
 ---------------------------------------------------------------------------------------------
+
+Cada url encontrada vai passar pelas validações predefinidas em sua configuração, Seja uma busca  [PADRÃO]
+ ou [PERSONALIZADO], chegando em seu termino o scan salva as urls validadas no arquivo txt definido.
+
+
+ Video Tutorial 01 
+--------
+*BUSCAR EMAILS [ SCANNER INURLMAIL 1.0 ]*
+[![TUTORIAL / BUSCAR EMAILS  SCANNER INURLBR INTERFACE 1.0 ](http://img.youtube.com/vi/XIuO_U91kVU/0.jpg)](http://www.youtube.com/watch?v=XIuO_U91kVU)
+
+
+ Video Tutorial 02
+--------
+*BUSCAR EMAILS [ SCANNER INURLMAIL 1.0 ]*
+[![TUTORIAL / BUSCAR EMAILS  SCANNER INURLBR INTERFACE 1.0 ](http://img.youtube.com/vi/DFY2VHD5cIc/0.jpg)](http://www.youtube.com/watch?v=DFY2VHD5cIc)
+
