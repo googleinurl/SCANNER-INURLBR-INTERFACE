@@ -28,6 +28,13 @@ URL: http://localhost/bot.php?senha=googleinurl
 ```
 ---------------------------------------------------------------------------------------------
 
+- EXEMPLO DE CONFIGURAÇÃO, 
+
+ * **EXPLOIT:** '0x272D2D3B,
+ * **DORK:** site:br inurl:php?conteudo=
+ * **TIPO PESQUISA:** [PADRÃO]
+
+![alt text](http://3.bp.blogspot.com/-GdbHl1CeI9A/U6tblvRQFgI/AAAAAAAAAJQ/KOU62pepdGE/s1600/Captura+de+tela+de+2014-06-25+20:28:27.png "SCANNER INURLBR")
 Configuração:
 ---------------------------------------------------------------------------------------------
 
@@ -114,8 +121,20 @@ Em outras situações usamos o exploit para gerar o erro desejado.
 ```
 ---------------------------------------------------------------------------------------------
 
+URLS EXPLOITADAS
+--------
+![alt text](http://2.bp.blogspot.com/-hEon7IYr46w/U6tbl2bwlVI/AAAAAAAAAJU/MwVIlbIHZ9c/s1600/Captura+de+tela+de+2014-06-25+20:30:19.png "SCANNER INURLBR")
+
 Cada url encontrada vai passar pelas validações predefinidas em sua configuração, Seja uma busca  [PADRÃO]
 ou [PERSONALIZADO], chegando em seu termino o scan salva as urls validadas no arquivo txt definido.
+
+RESULTADO DA BUSCA
+--------
+![alt text](http://4.bp.blogspot.com/-2JDoF7wftMo/U6tbmH8RRWI/AAAAAAAAAJY/ijMSv04LnnQ/s1600/Captura+de+tela+de+2014-06-25+20:30:28.png "SCANNER INURLBR")
+
+ARQUIVO RESULTADO 
+--------
+![alt text](http://2.bp.blogspot.com/-Nd8HLl5QkfY/U6tcEs7ivVI/AAAAAAAAAJo/ciy7KFTaFPw/s1600/Captura+de+tela+de+2014-06-25+20:33:05.png "SCANNER INURLBR")
 
 
 - Video Tutorial 01 
