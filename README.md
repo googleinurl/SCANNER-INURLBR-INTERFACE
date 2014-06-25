@@ -1,4 +1,8 @@
 ![alt text](http://3.bp.blogspot.com/-ajoW2tRYtQg/U6tSKgAmSYI/AAAAAAAAAJA/uf7IQ3GArA4/s1600/logo_inurl4.png "SCANNER INURLBR")
+[**FACEBOOK**](https://fb.com/InurlBrasil) / [**TWITTER**](https://twitter.com/googleinurl)
+
+>SCANNER QUE UTILIZA O MOTOR DE BUSCA GOOGLE PARA ENCONTRAR URLS, POSSIBILIDADE SETAR PROXY,EXPLOIT, VALIDAÇÕES COM STRINGS/ERROS PADRÕES DE SISTEMA SEJA SQL OU PROGRAMAÇÃO + BUSCA DE ERROS PERSONALIZADO EM CADA URL.
+
 
  *  PHP Version         5.4.7
  *  php5-curl           LIB
